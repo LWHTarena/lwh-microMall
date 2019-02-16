@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>lwh-microMall</artifactId>
+        <groupId>com.lwhtarena.microMall</groupId>
+        <version>1.0.0</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <packaging>pom</packaging>
+    <modules>
+        <module>lwh-micromall-common-base</module>
+        <module>lwh-micromall-common-config</module>
+        <module>lwh-micromall-common-core</module>
+        <module>lwh-micromall-common-util</module>
+        <module>lwh-micromall-common-zk</module>
+        <module>lwh-micromall-security-core</module>
+        <module>lwh-micromall-security-app</module>
+        <module>lwh-micromall-security-feign</module>
+    </modules>
+
+    <artifactId>lwh-micromall-common</artifactId>
+
+
+</project>

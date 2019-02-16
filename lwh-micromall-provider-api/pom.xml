@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>lwh-microMall</artifactId>
+        <groupId>com.lwhtarena.microMall</groupId>
+        <version>1.0.0</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>lwh-micromall-provider-api</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>lwh-micromall-provider-mdc-api</module>
+        <module>lwh-micromall-provider-omc-api</module>
+        <module>lwh-micromall-provider-opc-api</module>
+        <module>lwh-micromall-provider-sdk-api</module>
+        <module>lwh-micromall-provider-tpc-api</module>
+        <module>lwh-micromall-provider-uac-api</module>
+    </modules>
+
+
+</project>

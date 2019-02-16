@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="lwh-micromall-common-app" />
+        <module name="lwh-micromall-common-base" />
+        <module name="lwh-micromall-common-config" />
+        <module name="lwh-micromall-common-core" />
+        <module name="lwh-micromall-common-util" />
+        <module name="lwh-micromall-common-zk" />
+        <module name="lwh-micromall-discovery" />
+        <module name="lwh-micromall-eureka" />
+        <module name="lwh-micromall-gateway" />
+        <module name="lwh-micromall-generator-mdc" />
+        <module name="lwh-micromall-generator-omc" />
+        <module name="lwh-micromall-generator-opc" />
+        <module name="lwh-micromall-generator-tpc" />
+        <module name="lwh-micromall-generator-uac" />
+        <module name="lwh-micromall-monitor" />
+        <module name="lwh-micromall-provider-mdc" />
+        <module name="lwh-micromall-provider-mdc-api" />
+        <module name="lwh-micromall-provider-omc" />
+        <module name="lwh-micromall-provider-omc-api" />
+        <module name="lwh-micromall-provider-opc" />
+        <module name="lwh-micromall-provider-opc-api" />
+        <module name="lwh-micromall-provider-sdk-api" />
+        <module name="lwh-micromall-provider-tpc" />
+        <module name="lwh-micromall-provider-tpc-api" />
+        <module name="lwh-micromall-provider-uac" />
+        <module name="lwh-micromall-provider-uac-api" />
+        <module name="lwh-micromall-security-app" />
+        <module name="lwh-micromall-security-core" />
+        <module name="lwh-micromall-security-feign" />
+        <module name="lwh-micromall-ziplog" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="lwh-micromail-common" target="1.5" />
+      <module name="lwh-micromail-common-app" target="1.5" />
+      <module name="lwh-micromail-common-base" target="1.7" />
+      <module name="lwh-micromail-common-core" target="1.7" />
+      <module name="lwh-micromail-common-util" target="1.7" />
+      <module name="lwh-micromail-common-zk" target="1.7" />
+      <module name="lwh-micromail-discovery" target="1.7" />
+      <module name="lwh-micromail-generator" target="1.7" />
+      <module name="lwh-micromail-generator-mdc" target="1.7" />
+      <module name="lwh-micromail-generator-opc" target="1.7" />
+      <module name="lwh-micromail-generator-tpc" target="1.7" />
+      <module name="lwh-micromail-monitor" target="1.7" />
+      <module name="lwh-micromail-provider" target="1.5" />
+      <module name="lwh-micromail-provider-api" target="1.5" />
+      <module name="lwh-micromail-provider-mdc-api" target="1.7" />
+      <module name="lwh-micromail-provider-sdk-api" target="1.7" />
+      <module name="lwh-micromail-provider-tpc" target="1.7" />
+      <module name="lwh-micromail-provider-tpc-api" target="1.7" />
+      <module name="lwh-micromail-ziplog" target="1.7" />
+      <module name="lwhmicromailgateway" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
