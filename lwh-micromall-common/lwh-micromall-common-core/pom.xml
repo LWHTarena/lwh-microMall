@@ -91,6 +91,7 @@
         <dependency>
             <groupId>com.lwhtarena.microMall</groupId>
             <artifactId>lwh-micromall-common-config</artifactId>
+            <version>1.0.0</version>
         </dependency>
 
         <dependency>
