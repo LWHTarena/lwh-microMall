@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lwh-micromall-common" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/lwh-micromall-common/lwh-micromall-common-app" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/lwh-micromall-common/lwh-micromall-common-base" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/lwh-micromall-common/lwh-micromall-common-config" charset="UTF-8" />
@@ -9,6 +11,7 @@
     <file url="file://$PROJECT_DIR$/lwh-micromall-common/lwh-micromall-common-zk" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/lwh-micromall-common/lwh-micromall-security-app" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/lwh-micromall-common/lwh-micromall-security-core" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lwh-micromall-common/lwh-micromall-security-feign" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/lwh-micromall-discovery" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/lwh-micromall-eureka" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/lwh-micromall-gateway" charset="UTF-8" />
@@ -19,6 +22,8 @@
     <file url="file://$PROJECT_DIR$/lwh-micromall-generator/lwh-micromall-generator-tpc" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/lwh-micromall-generator/lwh-micromall-generator-uac" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/lwh-micromall-monitor" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lwh-micromall-provider" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lwh-micromall-provider-api" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/lwh-micromall-provider-api/lwh-micromall-provider-mdc-api" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/lwh-micromall-provider-api/lwh-micromall-provider-omc-api" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/lwh-micromall-provider-api/lwh-micromall-provider-opc-api" charset="UTF-8" />
