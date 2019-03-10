@@ -1,5 +1,6 @@
 package com.lwhtarena.microMall.security.core;
 
+import com.lwhtarena.microMall.security.core.properties.SecurityProperties;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
 

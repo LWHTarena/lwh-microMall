@@ -1,6 +1,8 @@
 package com.lwhtarena.microMall.security.feign;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.lwhtarena.microMall.common.base.enums.ErrorCodeEnum;
+import com.lwhtarena.microMall.common.base.exception.BusinessException;
 import com.netflix.hystrix.exception.HystrixBadRequestException;
 import feign.Response;
 import feign.codec.ErrorDecoder;

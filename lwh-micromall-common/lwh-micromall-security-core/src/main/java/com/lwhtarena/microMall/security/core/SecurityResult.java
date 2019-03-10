@@ -2,6 +2,7 @@ package com.lwhtarena.microMall.security.core;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.apache.commons.lang.StringUtils;
 
 /**
  * The class Security result.
