@@ -10,6 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>lwh-micromall-security-feign</artifactId>
+    <description>基于auth2的feign配置</description>
 
     <dependencies>
         <dependency>

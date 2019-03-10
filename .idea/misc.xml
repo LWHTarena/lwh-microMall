@@ -6,7 +6,6 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/lwh-micromall-common/pom.xml" />
-        <option value="$PROJECT_DIR$/lwh-micromall-common/lwh-micromall-common-app/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

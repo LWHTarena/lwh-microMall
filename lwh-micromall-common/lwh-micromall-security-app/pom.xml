@@ -14,6 +14,7 @@
     <name>lwh-micromall-security-app</name>
     <!-- FIXME change it to the project's website -->
     <url>http://www.example.com</url>
+    <description>公共无状态安全认证</description>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

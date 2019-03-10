@@ -2,11 +2,11 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="lwh-micromall-common-app" />
         <module name="lwh-micromall-common-base" />
         <module name="lwh-micromall-common-config" />
         <module name="lwh-micromall-common-core" />
@@ -58,6 +58,7 @@
       <module name="lwh-micromail-provider-tpc" target="1.7" />
       <module name="lwh-micromail-provider-tpc-api" target="1.7" />
       <module name="lwh-micromail-ziplog" target="1.7" />
+      <module name="lwh-micromall-common-app" target="1.7" />
       <module name="lwhmicromailgateway" target="1.5" />
     </bytecodeTargetLevel>
   </component>
