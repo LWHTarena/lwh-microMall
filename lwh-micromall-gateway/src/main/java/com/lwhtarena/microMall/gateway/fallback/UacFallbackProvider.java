@@ -1,6 +1,11 @@
 package com.lwhtarena.microMall.gateway.fallback;
 
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.client.ClientHttpResponse;
 import org.springframework.stereotype.Component;
+
+import java.io.InputStream;
 
 /**
  * @program lwh-microMall
@@ -10,7 +15,7 @@ import org.springframework.stereotype.Component;
  **/
 @Component
 @Slf4j
-public class UacFallbackProvider implements FallbackProvider {
+public class UacFallbackProvider implements FallbackProvider{
     @Override
     public String getRoute() {
         return "*";
