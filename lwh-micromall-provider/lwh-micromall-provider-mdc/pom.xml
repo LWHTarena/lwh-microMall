@@ -74,5 +74,9 @@
             <groupId>com.lwhtarena.microMall</groupId>
             <artifactId>lwh-micromall-provider-opc-api</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.lwhtarena.microMall</groupId>
+            <artifactId>lwh-micromall-common-core</artifactId>
+        </dependency>
     </dependencies>
 </project>
