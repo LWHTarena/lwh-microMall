@@ -25,13 +25,13 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.liuzm.paascloud.common</groupId>
-            <artifactId>paascloud-common-util</artifactId>
-        </dependency>
-        <dependency>
             <groupId>com.github.pagehelper</groupId>
             <artifactId>pagehelper</artifactId>
             <version>5.0.3</version>
+        </dependency>
+        <dependency>
+            <groupId>com.lwhtarena.microMall</groupId>
+            <artifactId>lwh-micromall-common-util</artifactId>
         </dependency>
     </dependencies>
 </project>

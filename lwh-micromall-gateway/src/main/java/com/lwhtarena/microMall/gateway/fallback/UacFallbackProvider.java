@@ -1,5 +1,6 @@
 package com.lwhtarena.microMall.gateway.fallback;
 
+import com.netflix.hystrix.exception.HystrixTimeoutException;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.client.ClientHttpResponse;
