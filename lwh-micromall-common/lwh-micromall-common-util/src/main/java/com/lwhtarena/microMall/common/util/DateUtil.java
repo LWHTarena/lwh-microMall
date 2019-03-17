@@ -1,7 +1,6 @@
 package com.lwhtarena.microMall.common.util;
 
 
-import com.xiaoleilu.hutool.date.DateField;
 import lombok.AccessLevel;
 import lombok.NoArgsConstructor;
 
@@ -23,7 +22,7 @@ public class DateUtil {
 	 * @return the before time[yyyy-MM-dd HH:mm:ss]
 	 */
 	public static String getBeforeTime(int minute) {
-		Date newDate = com.xiaoleilu.hutool.date.DateUtil.offset(new Date(), DateField.MINUTE, -minute);
-		return com.xiaoleilu.hutool.date.DateUtil.formatDateTime(newDate);
+		Date newDate = cn.hutool.core.date.DateUtil.offset(new Date(), cn.hutool.core.date.DateField.MINUTE, -minute);
+		return cn.hutool.core.date.DateUtil.formatDateTime(newDate);
 	}
 }
