@@ -4,16 +4,16 @@ import com.alibaba.fastjson.JSON;
 import com.google.common.base.Charsets;
 import com.google.common.base.Preconditions;
 import com.google.common.base.Strings;
-import com.paascloud.base.constant.GlobalConstant;
-import com.paascloud.config.properties.ZookeeperProperties;
-import com.paascloud.core.registry.base.CoordinatorRegistryCenter;
-import com.paascloud.core.registry.base.ReliableMessageRegisterDto;
-import com.paascloud.core.registry.exception.RegExceptionHandler;
-import com.xiaoleilu.hutool.date.DateUtil;
+import com.lwhtarena.microMall.common.base.constant.GlobalConstant;
+import com.lwhtarena.microMall.common.config.properties.ZookeeperProperties;
+import com.lwhtarena.microMall.common.util.DateUtil;
+import com.lwhtarena.microMall.common.zk.registry.base.CoordinatorRegistryCenter;
+import com.lwhtarena.microMall.common.zk.registry.base.ReliableMessageRegisterDto;
+import com.lwhtarena.microMall.common.zk.registry.exception.RegExceptionHandler;
 import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.extern.slf4j.Slf4j;
-import org.apache.commons.lang3.StringUtils;
+import org.apache.commons.lang.StringUtils;
 import org.apache.curator.framework.CuratorFramework;
 import org.apache.curator.framework.CuratorFrameworkFactory;
 import org.apache.curator.framework.api.ACLProvider;
@@ -493,14 +493,14 @@ public final class ZookeeperRegistryCenter implements CoordinatorRegistryCenter 
 			dto = new ReliableMessageRegisterDto().setProducerGroup(producerGroup).setNamesrvAddr(namesrvAddr);
 			String producerJson = JSON.toJSONString(dto);
 			this.persist(producerRootPath, producerJson);
-			this.persistEphemeral(producerRootPath + GlobalConstant.Symbol.SLASH + host, DateUtil.now());
+			this.persistEphemeral(producerRootPath + GlobalConstant.Symbol.SLASH + host,cn.hutool.core.date.DateUtil.now());
 		}
 		// 注册消费者
 		if (StringUtils.isNotEmpty(consumerGroup)) {
 			dto = new ReliableMessageRegisterDto().setConsumerGroup(consumerGroup).setNamesrvAddr(namesrvAddr);
 			String producerJson = JSON.toJSONString(dto);
 			this.persist(consumerRootPath, producerJson);
-			this.persistEphemeral(consumerRootPath + GlobalConstant.Symbol.SLASH + host, DateUtil.now());
+			this.persistEphemeral(consumerRootPath + GlobalConstant.Symbol.SLASH + host, cn.hutool.core.date.DateUtil.now());
 		}
 
 	}

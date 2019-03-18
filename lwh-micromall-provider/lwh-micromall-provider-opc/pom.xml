@@ -112,5 +112,17 @@
             <groupId>org.springframework.retry</groupId>
             <artifactId>spring-retry</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.lwhtarena.microMall</groupId>
+            <artifactId>lwh-micromall-provider-sdk-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.lwhtarena.microMall</groupId>
+            <artifactId>lwh-micromall-provider-opc-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.lwhtarena.microMall</groupId>
+            <artifactId>lwh-micromall-provider-mdc-api</artifactId>
+        </dependency>
     </dependencies>
 </project>

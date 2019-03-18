@@ -39,12 +39,12 @@
             <artifactId>spring-cloud-sleuth-zipkin</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.liuzm.paascloud.common</groupId>
-            <artifactId>paascloud-common-util</artifactId>
+            <groupId>com.lwhtarena.microMall</groupId>
+            <artifactId>lwh-micromall-common-util</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.liuzm.paascloud.common</groupId>
-            <artifactId>paascloud-common-core</artifactId>
+            <groupId>com.lwhtarena.microMall</groupId>
+            <artifactId>lwh-micromall-common-core</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
