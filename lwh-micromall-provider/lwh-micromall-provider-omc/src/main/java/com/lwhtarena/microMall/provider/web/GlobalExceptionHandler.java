@@ -1,23 +1,12 @@
-/*
- * Copyright (c) 2018. paascloud.net All Rights Reserved.
- * 项目名称：paascloud快速搭建企业级分布式微服务平台
- * 类名称：GlobalExceptionHandler.java
- * 创建人：刘兆明
- * 联系方式：paascloud.net@gmail.com
- * 开源地址: https://github.com/paascloud
- * 博客地址: http://blog.paascloud.net
- * 项目官网: http://paascloud.net
- */
-
 package com.lwhtarena.microMall.provider.web;
 
 
-import com.paascloud.base.enums.ErrorCodeEnum;
-import com.paascloud.base.exception.BusinessException;
-import com.paascloud.provider.model.dto.GlobalExceptionLogDto;
-import com.paascloud.provider.service.MdcExceptionLogFeignApi;
-import com.paascloud.wrapper.WrapMapper;
-import com.paascloud.wrapper.Wrapper;
+import com.lwhtarena.microMall.common.base.enums.ErrorCodeEnum;
+import com.lwhtarena.microMall.common.base.exception.BusinessException;
+import com.lwhtarena.microMall.common.util.wrapper.WrapMapper;
+import com.lwhtarena.microMall.common.util.wrapper.Wrapper;
+import com.lwhtarena.microMall.provider.model.dto.GlobalExceptionLogDto;
+import com.lwhtarena.microMall.provider.service.MdcExceptionLogFeignApi;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.task.TaskExecutor;

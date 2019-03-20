@@ -1,24 +1,13 @@
-/*
- * Copyright (c) 2018. paascloud.net All Rights Reserved.
- * 项目名称：paascloud快速搭建企业级分布式微服务平台
- * 类名称：OpcOssServiceImpl.java
- * 创建人：刘兆明
- * 联系方式：paascloud.net@gmail.com
- * 开源地址: https://github.com/paascloud
- * 博客地址: http://blog.paascloud.net
- * 项目官网: http://paascloud.net
- */
-
 package com.lwhtarena.microMall.provider.service.impl;
 
-import com.paascloud.base.enums.ErrorCodeEnum;
-import com.paascloud.provider.exceptions.OmcBizException;
-import com.paascloud.provider.model.dto.oss.OptGetUrlRequest;
-import com.paascloud.provider.model.dto.oss.OptUploadFileReqDto;
-import com.paascloud.provider.model.dto.oss.OptUploadFileRespDto;
-import com.paascloud.provider.service.OpcOssFeignApi;
-import com.paascloud.provider.service.OpcOssService;
-import com.paascloud.wrapper.Wrapper;
+import com.lwhtarena.microMall.common.base.enums.ErrorCodeEnum;
+import com.lwhtarena.microMall.common.util.wrapper.Wrapper;
+import com.lwhtarena.microMall.provider.exceptions.OmcBizException;
+import com.lwhtarena.microMall.provider.model.dto.oss.OptGetUrlRequest;
+import com.lwhtarena.microMall.provider.model.dto.oss.OptUploadFileReqDto;
+import com.lwhtarena.microMall.provider.model.dto.oss.OptUploadFileRespDto;
+import com.lwhtarena.microMall.provider.service.OpcOssFeignApi;
+import com.lwhtarena.microMall.provider.service.OpcOssService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 

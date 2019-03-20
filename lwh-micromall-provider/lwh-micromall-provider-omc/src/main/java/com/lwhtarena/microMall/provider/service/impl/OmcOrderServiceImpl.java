@@ -1,51 +1,40 @@
-/*
- * Copyright (c) 2018. paascloud.net All Rights Reserved.
- * 项目名称：paascloud快速搭建企业级分布式微服务平台
- * 类名称：OmcOrderServiceImpl.java
- * 创建人：刘兆明
- * 联系方式：paascloud.net@gmail.com
- * 开源地址: https://github.com/paascloud
- * 博客地址: http://blog.paascloud.net
- * 项目官网: http://paascloud.net
- */
-
 package com.lwhtarena.microMall.provider.service.impl;
 
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.google.common.base.Preconditions;
 import com.google.common.collect.Lists;
-import com.paascloud.BigDecimalUtil;
-import com.paascloud.base.constant.GlobalConstant;
-import com.paascloud.base.dto.BaseQuery;
-import com.paascloud.base.dto.LoginAuthDto;
-import com.paascloud.base.enums.ErrorCodeEnum;
-import com.paascloud.core.support.BaseService;
-import com.paascloud.provider.exceptions.OmcBizException;
-import com.paascloud.provider.mapper.OmcCartMapper;
-import com.paascloud.provider.mapper.OmcOrderMapper;
-import com.paascloud.provider.mapper.OmcShippingMapper;
-import com.paascloud.provider.model.constant.OmcApiConstant;
-import com.paascloud.provider.model.domain.OmcCart;
-import com.paascloud.provider.model.domain.OmcOrder;
-import com.paascloud.provider.model.domain.OmcOrderDetail;
-import com.paascloud.provider.model.domain.OmcShipping;
-import com.paascloud.provider.model.dto.OrderDto;
-import com.paascloud.provider.model.dto.OrderPageQuery;
-import com.paascloud.provider.model.dto.ProductDto;
-import com.paascloud.provider.model.vo.OrderDocVo;
-import com.paascloud.provider.model.vo.OrderItemVo;
-import com.paascloud.provider.model.vo.OrderVo;
-import com.paascloud.provider.model.vo.ShippingVo;
-import com.paascloud.provider.service.MdcProductService;
-import com.paascloud.provider.service.OmcCartService;
-import com.paascloud.provider.service.OmcOrderDetailService;
-import com.paascloud.provider.service.OmcOrderService;
-import org.apache.commons.collections.CollectionUtils;
+import com.lwhtarena.microMall.common.base.constant.GlobalConstant;
+import com.lwhtarena.microMall.common.base.dto.BaseQuery;
+import com.lwhtarena.microMall.common.base.dto.LoginAuthDto;
+import com.lwhtarena.microMall.common.base.enums.ErrorCodeEnum;
+import com.lwhtarena.microMall.common.core.support.BaseService;
+import com.lwhtarena.microMall.common.util.BigDecimalUtil;
+import com.lwhtarena.microMall.provider.exceptions.OmcBizException;
+import com.lwhtarena.microMall.provider.mapper.OmcCartMapper;
+import com.lwhtarena.microMall.provider.mapper.OmcOrderMapper;
+import com.lwhtarena.microMall.provider.mapper.OmcShippingMapper;
+import com.lwhtarena.microMall.provider.model.constant.OmcApiConstant;
+import com.lwhtarena.microMall.provider.model.domain.OmcCart;
+import com.lwhtarena.microMall.provider.model.domain.OmcOrder;
+import com.lwhtarena.microMall.provider.model.domain.OmcOrderDetail;
+import com.lwhtarena.microMall.provider.model.domain.OmcShipping;
+import com.lwhtarena.microMall.provider.model.dto.OrderDto;
+import com.lwhtarena.microMall.provider.model.dto.OrderPageQuery;
+import com.lwhtarena.microMall.provider.model.dto.ProductDto;
+import com.lwhtarena.microMall.provider.model.vo.OrderDocVo;
+import com.lwhtarena.microMall.provider.model.vo.OrderItemVo;
+import com.lwhtarena.microMall.provider.model.vo.OrderVo;
+import com.lwhtarena.microMall.provider.model.vo.ShippingVo;
+import com.lwhtarena.microMall.provider.service.MdcProductService;
+import com.lwhtarena.microMall.provider.service.OmcCartService;
+import com.lwhtarena.microMall.provider.service.OmcOrderDetailService;
+import com.lwhtarena.microMall.provider.service.OmcOrderService;
 import org.apache.commons.lang3.StringUtils;
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import org.springframework.util.CollectionUtils;
 
 import javax.annotation.Resource;
 import java.math.BigDecimal;

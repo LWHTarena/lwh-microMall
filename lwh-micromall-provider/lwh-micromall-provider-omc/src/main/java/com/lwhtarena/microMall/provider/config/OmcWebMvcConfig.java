@@ -11,9 +11,9 @@
 
 package com.lwhtarena.microMall.provider.config;
 
-import com.paascloud.core.config.PcObjectMapper;
-import com.paascloud.core.config.SwaggerConfiguration;
-import com.paascloud.core.interceptor.TokenInterceptor;
+import com.lwhtarena.microMall.common.core.config.PcObjectMapper;
+import com.lwhtarena.microMall.common.core.config.SwaggerConfiguration;
+import com.lwhtarena.microMall.common.core.interceptor.TokenInterceptor;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
 import org.springframework.http.converter.HttpMessageConverter;

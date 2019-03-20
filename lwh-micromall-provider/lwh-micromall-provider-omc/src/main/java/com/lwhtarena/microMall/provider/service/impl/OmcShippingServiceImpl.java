@@ -1,28 +1,17 @@
-/*
- * Copyright (c) 2018. paascloud.net All Rights Reserved.
- * 项目名称：paascloud快速搭建企业级分布式微服务平台
- * 类名称：OmcShippingServiceImpl.java
- * 创建人：刘兆明
- * 联系方式：paascloud.net@gmail.com
- * 开源地址: https://github.com/paascloud
- * 博客地址: http://blog.paascloud.net
- * 项目官网: http://paascloud.net
- */
-
 package com.lwhtarena.microMall.provider.service.impl;
 
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.google.common.base.Preconditions;
-import com.paascloud.PublicUtil;
-import com.paascloud.base.dto.LoginAuthDto;
-import com.paascloud.base.enums.ErrorCodeEnum;
-import com.paascloud.core.support.BaseService;
-import com.paascloud.provider.exceptions.OmcBizException;
-import com.paascloud.provider.mapper.OmcShippingMapper;
-import com.paascloud.provider.model.constant.OmcApiConstant;
-import com.paascloud.provider.model.domain.OmcShipping;
-import com.paascloud.provider.service.OmcShippingService;
+import com.lwhtarena.microMall.common.base.dto.LoginAuthDto;
+import com.lwhtarena.microMall.common.base.enums.ErrorCodeEnum;
+import com.lwhtarena.microMall.common.core.support.BaseService;
+import com.lwhtarena.microMall.common.util.PublicUtil;
+import com.lwhtarena.microMall.provider.exceptions.OmcBizException;
+import com.lwhtarena.microMall.provider.mapper.OmcShippingMapper;
+import com.lwhtarena.microMall.provider.model.constant.OmcApiConstant;
+import com.lwhtarena.microMall.provider.model.domain.OmcShipping;
+import com.lwhtarena.microMall.provider.service.OmcShippingService;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

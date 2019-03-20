@@ -1,44 +1,33 @@
-/*
- * Copyright (c) 2018. paascloud.net All Rights Reserved.
- * 项目名称：paascloud快速搭建企业级分布式微服务平台
- * 类名称：OmcCartServiceImpl.java
- * 创建人：刘兆明
- * 联系方式：paascloud.net@gmail.com
- * 开源地址: https://github.com/paascloud
- * 博客地址: http://blog.paascloud.net
- * 项目官网: http://paascloud.net
- */
-
 package com.lwhtarena.microMall.provider.service.impl;
 
 import com.google.common.base.Preconditions;
 import com.google.common.base.Splitter;
 import com.google.common.collect.Lists;
-import com.paascloud.BigDecimalUtil;
-import com.paascloud.PublicUtil;
-import com.paascloud.base.constant.GlobalConstant;
-import com.paascloud.base.dto.LoginAuthDto;
-import com.paascloud.base.enums.ErrorCodeEnum;
-import com.paascloud.core.support.BaseService;
-import com.paascloud.provider.exceptions.MdcBizException;
-import com.paascloud.provider.exceptions.OmcBizException;
-import com.paascloud.provider.mapper.OmcCartMapper;
-import com.paascloud.provider.model.constant.MdcApiConstant;
-import com.paascloud.provider.model.constant.OmcApiConstant;
-import com.paascloud.provider.model.domain.OmcCart;
-import com.paascloud.provider.model.domain.OmcOrderDetail;
-import com.paascloud.provider.model.dto.ProductDto;
-import com.paascloud.provider.model.dto.oss.OptGetUrlRequest;
-import com.paascloud.provider.model.vo.CartProductVo;
-import com.paascloud.provider.model.vo.CartVo;
-import com.paascloud.provider.model.vo.OrderItemVo;
-import com.paascloud.provider.model.vo.OrderProductVo;
-import com.paascloud.provider.service.MdcProductService;
-import com.paascloud.provider.service.OmcCartService;
-import com.paascloud.provider.service.OpcOssService;
-import org.apache.commons.collections.CollectionUtils;
+import com.lwhtarena.microMall.common.base.constant.GlobalConstant;
+import com.lwhtarena.microMall.common.base.dto.LoginAuthDto;
+import com.lwhtarena.microMall.common.base.enums.ErrorCodeEnum;
+import com.lwhtarena.microMall.common.core.support.BaseService;
+import com.lwhtarena.microMall.common.util.BigDecimalUtil;
+import com.lwhtarena.microMall.common.util.PublicUtil;
+import com.lwhtarena.microMall.provider.exceptions.MdcBizException;
+import com.lwhtarena.microMall.provider.exceptions.OmcBizException;
+import com.lwhtarena.microMall.provider.mapper.OmcCartMapper;
+import com.lwhtarena.microMall.provider.model.constant.MdcApiConstant;
+import com.lwhtarena.microMall.provider.model.constant.OmcApiConstant;
+import com.lwhtarena.microMall.provider.model.domain.OmcCart;
+import com.lwhtarena.microMall.provider.model.domain.OmcOrderDetail;
+import com.lwhtarena.microMall.provider.model.dto.ProductDto;
+import com.lwhtarena.microMall.provider.model.dto.oss.OptGetUrlRequest;
+import com.lwhtarena.microMall.provider.model.vo.CartProductVo;
+import com.lwhtarena.microMall.provider.model.vo.CartVo;
+import com.lwhtarena.microMall.provider.model.vo.OrderItemVo;
+import com.lwhtarena.microMall.provider.model.vo.OrderProductVo;
+import com.lwhtarena.microMall.provider.service.MdcProductService;
+import com.lwhtarena.microMall.provider.service.OmcCartService;
+import com.lwhtarena.microMall.provider.service.OpcOssService;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Service;
+import org.springframework.util.CollectionUtils;
 
 import javax.annotation.Resource;
 import java.math.BigDecimal;

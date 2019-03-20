@@ -1,26 +1,15 @@
-/*
- * Copyright (c) 2018. paascloud.net All Rights Reserved.
- * 项目名称：paascloud快速搭建企业级分布式微服务平台
- * 类名称：MdcProductServiceImpl.java
- * 创建人：刘兆明
- * 联系方式：paascloud.net@gmail.com
- * 开源地址: https://github.com/paascloud
- * 博客地址: http://blog.paascloud.net
- * 项目官网: http://paascloud.net
- */
-
 package com.lwhtarena.microMall.provider.service.impl;
 
 
 import com.google.common.base.Preconditions;
-import com.paascloud.base.enums.ErrorCodeEnum;
-import com.paascloud.provider.exceptions.MdcBizException;
-import com.paascloud.provider.model.dto.ProductDto;
-import com.paascloud.provider.model.vo.ProductDetailVo;
-import com.paascloud.provider.service.MdcProductFeignApi;
-import com.paascloud.provider.service.MdcProductQueryFeignApi;
-import com.paascloud.provider.service.MdcProductService;
-import com.paascloud.wrapper.Wrapper;
+import com.lwhtarena.microMall.common.base.enums.ErrorCodeEnum;
+import com.lwhtarena.microMall.common.util.wrapper.Wrapper;
+import com.lwhtarena.microMall.provider.exceptions.MdcBizException;
+import com.lwhtarena.microMall.provider.model.dto.ProductDto;
+import com.lwhtarena.microMall.provider.model.vo.ProductDetailVo;
+import com.lwhtarena.microMall.provider.service.MdcProductFeignApi;
+import com.lwhtarena.microMall.provider.service.MdcProductQueryFeignApi;
+import com.lwhtarena.microMall.provider.service.MdcProductService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
